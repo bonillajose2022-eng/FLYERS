@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flyers Fun! 🦋 Cambridge A2 Flyers Practice</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ===== FLOATING MASCOT ===== -->
+<div class="mascot-float" id="mascot">
+  <div class="mascot-body">🦋</div>
+  <div class="mascot-bubble" id="mascotBubble">Hi! I'm Flutter! Let's study together! 🌟</div>
+</div>
+
+<!-- ===== NAVIGATION ===== -->
+<nav class="navbar">
+  <div class="nav-logo">
+    <span class="logo-icon">🦋</span>
+    <span class="logo-text">Flyers<span class="logo-accent">Fun!</span></span>
+  </div>
+  <div class="nav-links">
+    <a href="#home" class="nav-link active" onclick="showSection('home')">🏠 Home</a>
+    <a href="#reading" class="nav-link" onclick="showSection('reading')">📖 Reading</a>
+    <a href="#listening" class="nav-link" onclick="showSection('listening')">🎧 Listening</a>
+    <a href="#progress" class="nav-link" onclick="showSection('progress')">⭐ My Stars</a>
+  </div>
+  <div class="nav-stars">
+    <span class="star-icon">⭐</span>
+    <span id="totalStars">0</span> Stars
+  </div>
+</nav>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="global-progress">
+  <div class="progress-track">
+    <div class="progress-fill" id="globalProgress"></div>
+    <div class="progress-butterfly" id="progressButterfly">🦋</div>
+  </div>
+  <span class="progress-text" id="progressText">0% Complete</span>
+</div>
+
+<!-- ==================== HOME SECTION ==================== -->
+<section id="home" class="section active">
+  <div class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Cambridge English</div>
+      <h1 class="hero-title">
+        Welcome to<br/>
+        <span class="title-highlight">Flyers Fun!</span> 🦋
+      </h1>
+      <p class="hero-subtitle">Get ready for the Cambridge A2 Flyers exam with fun exercises and games!</p>
+      <button class="btn-primary big-btn" onclick="showSection('reading')">
+        Start Learning! 🚀
+      </button>
+    </div>
+    <div class="hero-art">
+      <div class="floating-cards">
+        <div class="float-card fc1">📖 Reading</div>
+        <div class="float-card fc2">✏️ Writing</div>
+        <div class="float-card fc3">🎧 Listening</div>
+        <div class="float-card fc4">⭐ Fun!</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- What is Flyers? -->
+  <div class="info-section">
+    <h2 class="section-title">What is Cambridge A2 Flyers? 🤔</h2>
+    <div class="info-cards">
+      <div class="info-card card-blue">
+        <div class="card-icon">🏆</div>
+        <h3>Official Exam</h3>
+        <p>It's an official Cambridge English certificate for young learners! Great for your future!</p>
+      </div>
+      <div class="info-card card-green">
+        <div class="card-icon">👦</div>
+        <h3>For Kids Like You!</h3>
+        <p>Perfect for students aged 10-12 who are learning English. You can do it!</p>
+      </div>
+      <div class="info-card card-yellow">
+        <div class="card-icon">🌍</div>
+        <h3>Known Worldwide</h3>
+        <p>Universities and companies around the world recognize this certificate!</p>
+      </div>
+      <div class="info-card card-pink">
+        <div class="card-icon">😊</div>
+        <h3>Fun Topics</h3>
+        <p>Animals, hobbies, school, family — topics you already know and love!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Exam Structure -->
+  <div class="info-section">
+    <h2 class="section-title">How is the exam divided? 📋</h2>
+    <div class="exam-structure">
+      <div class="exam-part rw-part">
+        <div class="part-header">
+          <span class="part-emoji">📖✏️</span>
+          <h3>Reading & Writing</h3>
+        </div>
+        <div class="parts-list">
+          <div class="part-item">
+            <span class="part-num">Part 1</span>
+            <span class="part-desc">Match pictures to words</span>
+          </div>
+          <div class="part-item">
+            <span class="part-num">Part 2</span>
+            <span class="part-desc">Answer questions about a text</span>
+          </div>
+          <div class="part-item highlight-part">
+            <span class="part-num">Part 3 ⭐</span>
+            <span class="part-desc">Read & choose the right word</span>
+          </div>
+          <div class="part-item highlight-part">
+            <span class="part-num">Part 4 ⭐</span>
+            <span class="part-desc">Read & complete sentences</span>
+          </div>
+          <div class="part-item">
+            <span class="part-num">Part 5</span>
+            <span class="part-desc">Read a story & answer questions</span>
+          </div>
+          <div class="part-item">
+            <span class="part-num">Part 6</span>
+            <span class="part-desc">Write missing words in a text</span>
+          </div>
+          <div class="part-item highlight-part">
+            <span class="part-num">Part 7 ⭐</span>
+            <span class="part-desc">Write your own story!</span>
+          </div>
+        </div>
+      </div>
+      <div class="exam-part li-part">
+        <div class="part-header">
+          <span class="part-emoji">🎧</span>
+          <h3>Listening</h3>
+        </div>
+        <div class="parts-list">
+          <div class="part-item">
+            <span class="part-num">Part 1</span>
+            <span class="part-desc">Listen & draw lines</span>
+          </div>
+          <div class="part-item">
+            <span class="part-num">Part 2</span>
+            <span class="part-desc">Listen & write words</span>
+          </div>
+          <div class="part-item highlight-part">
+            <span class="part-num">Part 3 ⭐</span>
+            <span class="part-desc">Listen & match</span>
+          </div>
+          <div class="part-item highlight-part">
+            <span class="part-num">Part 4 ⭐</span>
+            <span class="part-desc">Listen & choose answers</span>
+          </div>
+          <div class="part-item">
+            <span class="part-num">Part 5</span>
+            <span class="part-desc">Listen & color / draw</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="highlight-note">⭐ = Parts we practice on this website!</p>
+  </div>
+
+  <!-- Tips -->
+  <div class="info-section">
+    <h2 class="section-title">Top Tips for the Exam! 💡</h2>
+    <div class="tips-grid">
+      <div class="tip-card">
+        <span class="tip-num">1</span>
+        <p><strong>Read carefully!</strong> Always read the whole text before answering questions.</p>
+      </div>
+      <div class="tip-card">
+        <span class="tip-num">2</span>
+        <p><strong>Don't panic!</strong> If you don't know an answer, move on and come back later.</p>
+      </div>
+      <div class="tip-card">
+        <span class="tip-num">3</span>
+        <p><strong>Listen twice!</strong> In the listening exam, you hear each part twice. Use both chances!</p>
+      </div>
+      <div class="tip-card">
+        <span class="tip-num">4</span>
+        <p><strong>Check your spelling!</strong> Small spelling mistakes can cost you points.</p>
+      </div>
+      <div class="tip-card">
+        <span class="tip-num">5</span>
+        <p><strong>Practice every day!</strong> Even 15 minutes of practice makes a big difference.</p>
+      </div>
+      <div class="tip-card">
+        <span class="tip-num">6</span>
+        <p><strong>You can do it!</strong> Believe in yourself and stay calm during the exam. 💪</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== READING SECTION ==================== -->
+<section id="reading" class="section">
+  <!-- Reading Nav Tabs -->
+  <div class="sub-nav">
+    <h2 class="sub-nav-title">📖 Reading & Writing</h2>
+    <div class="tab-buttons">
+      <button class="tab-btn active" onclick="showTab('rw', 'part3')">Part 3</button>
+      <button class="tab-btn" onclick="showTab('rw', 'part4')">Part 4</button>
+      <button class="tab-btn" onclick="showTab('rw', 'part7')">Part 7</button>
+    </div>
+  </div>
+
+  <!-- RW Part 3 -->
+  <div id="rw-part3" class="tab-content active">
+    <div class="part-intro">
+      <div class="part-badge">Reading & Writing • Part 3</div>
+      <h2>Reading Part 3: Choose the Right Word! 🔤</h2>
+    </div>
+
+    <div class="explanation-box">
+      <h3>📌 What do you do in Part 3?</h3>
+      <div class="steps">
+        <div class="step"><span class="step-num">1</span><p>You read a short text (like a story or article)</p></div>
+        <div class="step"><span class="step-num">2</span><p>Some lines have a blank space ( _____ )</p></div>
+        <div class="step"><span class="step-num">3</span><p>You choose the correct word from 3 options (A, B, or C)</p></div>
+        <div class="step"><span class="step-num">4</span><p>There are usually 10 questions</p></div>
+      </div>
+    </div>
+
+    <!-- Guided Example -->
+    <div class="example-section">
+      <h3>📚 Guided Example</h3>
+      <div class="text-passage">
+        <p>Last summer, my family <span class="blank-show">went</span> to the beach. We <span class="blank-show">swam</span> in the sea and <span class="blank-show">built</span> sandcastles. My little sister <span class="blank-show">found</span> a beautiful shell.</p>
+      </div>
+      <div class="options-example">
+        <p><strong>Question 1:</strong> Last summer, my family _____ to the beach.</p>
+        <div class="option-row">
+          <span class="opt correct-opt">A) went ✓</span>
+          <span class="opt">B) go</span>
+          <span class="opt">C) goes</span>
+        </div>
+        <p class="explanation-text">💡 We use <strong>past tense</strong> because it happened last summer!</p>
+      </div>
+    </div>
+
+    <!-- Tips -->
+    <div class="tips-box">
+      <h3>💡 Tips for Part 3</h3>
+      <ul class="tip-list">
+        <li>🔍 Read the whole sentence before choosing</li>
+        <li>⏰ Think about the <strong>tense</strong> (past, present, future)</li>
+        <li>🔤 Check if you need a <strong>noun, verb, or adjective</strong></li>
+        <li>❌ Cross out answers that are definitely wrong first</li>
+      </ul>
+    </div>
+
+    <!-- Interactive Exercise 1 -->
+    <div class="exercise-box" id="rw3-exercise">
+      <div class="exercise-header">
+        <h3>🎯 Practice Exercise: Watermelons!</h3>
+        <div class="exercise-score">Score: <span id="rw3-score">0</span>/5</div>
+      </div>
+      <div class="passage-box">
+        <p id="rw3-passage">
+          Watermelons are my favourite fruit. They are big and (1)<select class="inline-select" id="rw3-q1" onchange="checkRW3()"><option value="">--</option><option value="A">round</option><option value="B">tall</option><option value="C">thin</option></select> with green skin. Inside, the fruit is (2)<select class="inline-select" id="rw3-q2" onchange="checkRW3()"><option value="">--</option><option value="A">white</option><option value="B">red</option><option value="C">blue</option></select> and very sweet. You can (3)<select class="inline-select" id="rw3-q3" onchange="checkRW3()"><option value="">--</option><option value="A">eat</option><option value="B">drink</option><option value="C">sleep</option></select> them at picnics in summer. Watermelons (4)<select class="inline-select" id="rw3-q4" onchange="checkRW3()"><option value="">--</option><option value="A">grows</option><option value="B">grow</option><option value="C">growing</option></select> on the ground in warm places. They need lots of (5)<select class="inline-select" id="rw3-q5" onchange="checkRW3()"><option value="">--</option><option value="A">snow</option><option value="B">wind</option><option value="C">sunshine</option></select> to become big and tasty!
+        </p>
+      </div>
+      <div id="rw3-feedback" class="feedback-area"></div>
+      <button class="btn-check" onclick="submitRW3()">Check My Answers! ✅</button>
+      <button class="btn-reset" onclick="resetRW3()">Try Again 🔄</button>
+    </div>
+
+    <!-- Exercise 2 - Scary Story -->
+    <div class="exercise-box" id="rw3-exercise2">
+      <div class="exercise-header">
+        <h3>🎯 Practice Exercise 2: A Scary Story!</h3>
+        <div class="exercise-score">Score: <span id="rw3b-score">0</span>/5</div>
+      </div>
+      <div class="passage-box scary-theme">
+        <p id="rw3b-passage">
+          One dark night, Tom (1)<select class="inline-select" id="rw3b-q1"><option value="">--</option><option value="A">heard</option><option value="B">see</option><option value="C">smell</option></select> a strange noise outside his window. He (2)<select class="inline-select" id="rw3b-q2"><option value="">--</option><option value="A">looked</option><option value="B">look</option><option value="C">looking</option></select> out and saw a big (3)<select class="inline-select" id="rw3b-q3"><option value="">--</option><option value="A">happy</option><option value="B">beautiful</option><option value="C">dark</option></select> shadow in the garden. Tom was very (4)<select class="inline-select" id="rw3b-q4"><option value="">--</option><option value="A">excited</option><option value="B">frightened</option><option value="C">bored</option></select> but he was also curious. He (5)<select class="inline-select" id="rw3b-q5"><option value="">--</option><option value="A">went</option><option value="B">go</option><option value="C">goes</option></select> downstairs to investigate!
+        </p>
+      </div>
+      <div id="rw3b-feedback" class="feedback-area"></div>
+      <button class="btn-check" onclick="submitRW3b()">Check My Answers! ✅</button>
+      <button class="btn-reset" onclick="resetRW3b()">Try Again 🔄</button>
+    </div>
+
+    <!-- Extra Study Links - RW Part 3 -->
+    <div class="extra-links-box">
+      <div class="extra-links-header">
+        <span class="extra-links-icon">🌐</span>
+        <h3>Want more practice? Visit these websites!</h3>
+      </div>
+      <p class="extra-links-desc">These links will open extra Reading Part 3 exercises on another website. Ask a parent or teacher to help you open them!</p>
+      <div class="links-grid">
+        <a href="https://www.esleschool.com/a2-flyers-part-3-set-2/" target="_blank" rel="noopener" class="resource-link">
+          <span class="link-emoji">📄</span>
+          <span class="link-text">A2 Flyers Part 3 – Set 2</span>
+          <span class="link-arrow">→</span>
+        </a>
+        <a href="https://www.esleschool.com/a2-flyers-reading-part-3-growing-watermelon/" target="_blank" rel="noopener" class="resource-link">
+          <span class="link-emoji">🍉</span>
+          <span class="link-text">Part 3 – Growing Watermelon</span>
+          <span class="link-arrow">→</span>
+        </a>
+        <a href="https://www.esleschool.com/a2-flyers-reading-part-3/" target="_blank" rel="noopener" class="resource-link">
+          <span class="link-emoji">📖</span>
+          <span class="link-text">A2 Flyers Reading Part 3</span>
+          <span class="link-arrow">→</span>
+        </a>
+        <a href="https://www.esleschool.com/a2-flyers-scary-story-reading-practice/" target="_blank" rel="noopener" class="resource-link">
+          <span class="link-emoji">👻</span>
+          <span class="link-text">Part 3 – Scary Story Practice</span>
+          <span class="link-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- RW Part 4 -->
+  <div id="rw-part4" class="tab-content">
+    <div class="part-intro">
+      <div class="part-badge">Reading & Writing • Part 4</div>
+      <h2>Reading Part 4: Complete the Text! ✍️</h2>
+    </div>
+
+    <div class="explanation-box">
+      <h3>📌 What do you do in Part 4?</h3>
+      <div class="steps">
+        <div class="step"><span class="step-num">1</span><p>You read a longer text (like a magazine article)</p></div>
+        <div class="step"><span class="step-num">2</span><p>There are gaps in the text with a number</p></div>
+        <div class="step"><span class="step-num">3</span><p>Below the text you see sentences with missing words</p></div>
+        <div class="step"><span class="step-num">4</span><p>You choose the best word from 3 options</p></div>
+      </div>
+    </div>
+
+    <div class="tips-box">
+      <h3>💡 Tips for Part 4</h3>
+      <ul class="tip-list">
+        <li>📖 Read the title first — it tells you the topic!</li>
+        <li>🔎 Read the sentences around the gap for context clues</li>
+        <li>📝 Think about what kind of word is needed (noun? verb? adjective?)</li>
+        <li>🔁 Read the sentence again with your answer to check it sounds right</li>
+      </ul>
+    </div>
+
+    <!-- Ducks Exercise -->
+    <div class="exercise-box">
+      <div class="exercise-header">
+        <h3>🦆 Practice Exercise: Amazing Ducks!</h3>
+        <div class="exercise-score">Score: <span id="rw4a-score">0</span>/5</div>
+      </div>
+      <div class="passage-box">
+        <h4>Amazing Ducks</h4>
+        <p>Ducks are interesting birds. They (1)_____ near rivers, lakes and ponds. Baby ducks are called ducklings and they are very (2)_____. Ducks love to swim and they use their special (3)_____ feet to move through the water. They eat fish, plants and small (4)_____ that live in the water. In winter, many ducks (5)_____ to warmer countries.</p>
+      </div>
+      <div class="options-grid" id="rw4a-options">
+        <div class="q-row">
+          <span class="q-label">(1)</span>
+          <div class="radio-options">
+            <label class="radio-opt"><input type="radio" name="rw4a-q1" value="A"> A) live</label>
+            <label class="radio-opt"><input type="radio" name="rw4a-q1" value="B"> B) lives</label>
+            <label class="radio-opt"><input type="radio" name="rw4a-q1" value="C"> C) living</label>
+          </div>
+        </div>
+        <div class="q-row">
+          <span class="q-label">(2)</span>
+          <div class="radio-options">
+            <label class="radio-opt"><input type="radio" name="rw4a-q2" value="A"> A) ugly</label>
+            <label class="radio-opt"><input type="radio" name="rw4a-q2" value="B"> B) cute</label>
+            <label class="radio-opt"><input type="radio" name="rw4a-q2" value="C"> C) dangerous</label>
+          </div>
+        </div>
+        <div class="q-row">
+          <span class="q-label">(3)</span>
+          <div class="radio-options">
+            <label class="radio-opt"><input type="radio" name="rw4a-q3" value="A"> A) tiny</label>
+            <label class="radio-opt"><input type="radio" name="rw4a-q3" value="B"> B) fluffy</label>
+            <label class="radio-opt"><input type="radio" name="rw4a-q3" value="C"> C) webbed</label>
+          </div>
+        </div>
+        <div class="q-row">
+          <span class="q-label">(4)</span>
+          <div class="radio-options">
+            <label class="radio-opt"><input type="radio" name="rw4a-q4" value="A"> A) insects</label>
+            <label class="radio-opt"><input type="radio" name="rw4a-q4" value="B"> B) flowers</label>
+            <label class="radio-opt"><input type="radio" name="rw4a-q4" value="C"> C">C) rocks</label>
+          </div>
+        </div>
+        <div class="q-row">
+          <span class="q-label">(5)</span>
+          <div class="radio-options">
+            <label class="radio-opt"><input type="radio" name="rw4a-q5" value="A"> A) run</label>
+            <label class="radio-opt"><input type="radio" name="rw4a-q5" value="B"> B) fly</label>
+            <label class="radio-opt"><input type="radio" name="rw4a-q5" value="C"> C) swim</label>
+          </div>
+        </div>
+      </div>
+      <div id="rw4a-feedback" class="feedback-area"></div>
+      <button class="btn-check" onclick="submitRW4a()">Check My Answers! ✅</button>
+      <button class="btn-reset" onclick="resetRW4a()">Try Again 🔄</button>
+    </div>
+
+    <!-- Whales Exercise -->
+    <div class="exercise-box">
+      <div class="exercise-header">
+        <h3>🐋 Practice Exercise 2: Whales!</h3>
+        <div class="exercise-score">Score: <span id="rw4b-score">0</span>/5</div>
+      </div>
+      <div class="passage-box ocean-theme">
+        <h4>The Amazing Whale</h4>
+        <p>Whales are the (1)_____ animals in the ocean. They are mammals, which means they breathe (2)_____ not water. A baby whale is called a (3)_____. Whales use special sounds to (4)_____ with each other. These sounds can travel very (5)_____ through the water!</p>
+      </div>
+      <div class="options-grid">
+        <div class="q-row">
+          <span class="q-label">(1)</span>
+          <div class="radio-options">
+            <label class="radio-opt"><input type="radio" name="rw4b-q1" value="A"> A) smallest</label>
+            <label class="radio-opt"><input type="radio" name="rw4b-q1" value="B"> B) biggest</label>
+            <label class="radio-opt"><input type="radio" name="rw4b-q1" value="C"> C) fastest</label>
+          </div>
+        </div>
+        <div class="q-row">
+          <span class="q-label">(2)</span>
+          <div class="radio-options">
+            <label class="radio-opt"><input type="radio" name="rw4b-q2" value="A"> A) air</label>
+            <label class="radio-opt"><input type="radio" name="rw4b-q2" value="B"> B) food</label>
+            <label class="radio-opt"><input type="radio" name="rw4b-q2" value="C"> C) grass</label>
+          </div>
+        </div>
+        <div class="q-row">
+          <span class="q-label">(3)</span>
+          <div class="radio-options">
+            <label class="radio-opt"><input type="radio" name="rw4b-q3" value="A"> A) puppy</label>
+            <label class="radio-opt"><input type="radio" name="rw4b-q3" value="B"> B"> B) kitten</label>
+            <label class="radio-opt"><input type="radio" name="rw4b-q3" value="C"> C) calf</label>
+          </div>
+        </div>
+        <div class="q-row">
+          <span class="q-label">(4)</span>
+          <div class="radio-options">
+            <label class="radio-opt"><input type="radio" name="rw4b-q4" value="A"> A) fight</label>
+            <label class="radio-opt"><input type="radio" name="rw4b-q4" value="B"> B) communicate</label>
+            <label class="radio-opt"><input type="radio" name="rw4b-q4" value="C"> C) sleep</label>
+          </div>
+        </div>
+        <div class="q-row">
+          <span class="q-label">(5)</span>
+          <div class="radio-options">
+            <label class="radio-opt"><input type="radio" name="rw4b-q5" value="A"> A) slowly</label>
+            <label class="radio-opt"><input type="radio" name="rw4b-q5" value="B"> B) quietly</label>
+            <label class="radio-opt"><input type="radio" name="rw4b-q5" value="C"> C) far</label>
+          </div>
+        </div>
+      </div>
+      <div id="rw4b-feedback" class="feedback-area"></div>
+      <button class="btn-check" onclick="submitRW4b()">Check My Answers! ✅</button>
+      <button class="btn-reset" onclick="resetRW4b()">Try Again 🔄</button>
+    </div>
+
+    <!-- Extra Study Links - RW Part 4 -->
+    <div class="extra-links-box">
+      <div class="extra-links-header">
+        <span class="extra-links-icon">🌐</span>
+        <h3>Want more practice? Visit these websites!</h3>
+      </div>
+      <p class="extra-links-desc">Click any link below for extra Reading Part 4 practice exercises. Great job for wanting to do more! 🌟</p>
+      <div class="links-grid">
+        <a href="https://www.esleschool.com/a2-flyers-part-4/" target="_blank" rel="noopener" class="resource-link">
+          <span class="link-emoji">📄</span>
+          <span class="link-text">A2 Flyers Part 4</span>
+          <span class="link-arrow">→</span>
+        </a>
+        <a href="https://www.esleschool.com/ducks/" target="_blank" rel="noopener" class="resource-link">
+          <span class="link-emoji">🦆</span>
+          <span class="link-text">Part 4 – Ducks</span>
+          <span class="link-arrow">→</span>
+        </a>
+        <a href="https://www.esleschool.com/a2-flyers-part-4-2/" target="_blank" rel="noopener" class="resource-link">
+          <span class="link-emoji">📄</span>
+          <span class="link-text">A2 Flyers Part 4 – Set 2</span>
+          <span class="link-arrow">→</span>
+        </a>
+        <a href="https://www.esleschool.com/a2-flyers-reading-part-4-planets/" target="_blank" rel="noopener" class="resource-link">
+          <span class="link-emoji">🪐</span>
+          <span class="link-text">Part 4 – Planets</span>
+          <span class="link-arrow">→</span>
+        </a>
+        <a href="https://www.esleschool.com/whales/" target="_blank" rel="noopener" class="resource-link">
+          <span class="link-emoji">🐋</span>
+          <span class="link-text">Part 4 – Whales</span>
+          <span class="link-arrow">→</span>
+        </a>
+        <a href="https://www.esleschool.com/a2-flyers-reading-explore-london/" target="_blank" rel="noopener" class="resource-link">
+          <span class="link-emoji">🏙️</span>
+          <span class="link-text">Part 4 – Explore London</span>
+          <span class="link-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- RW Part 7 -->
+  <div id="rw-part7" class="tab-content">
+    <div class="part-intro">
+      <div class="part-badge">Reading & Writing • Part 7</div>
+      <h2>Reading Part 7: Write Your Story! 🖊️</h2>
+    </div>
+
+    <div class="explanation-box">
+      <h3>📌 What do you do in Part 7?</h3>
+      <div class="steps">
+        <div class="step"><span class="step-num">1</span><p>You see 3 pictures that tell a story</p></div>
+        <div class="step"><span class="step-num">2</span><p>You write a story based on the pictures</p></div>
+        <div class="step"><span class="step-num">3</span><p>Write at least <strong>20 words</strong></p></div>
+        <div class="step"><span class="step-num">4</span><p>Use your imagination to make it interesting!</p></div>
+      </div>
+    </div>
+
+    <!-- Story Structure Tips -->
+    <div class="story-tips">
+      <h3>📝 How to Write a Great Story</h3>
+      <div class="story-structure">
+        <div class="story-part beginning">
+          <span class="sp-icon">🌅</span>
+          <h4>Beginning</h4>
+          <p>Who is in the story? Where are they? When does it happen?</p>
+          <div class="phrase-examples">
+            <span class="phrase">One day...</span>
+            <span class="phrase">Last Saturday...</span>
+            <span class="phrase">It was a sunny morning...</span>
+          </div>
+        </div>
+        <div class="story-arrow">→</div>
+        <div class="story-part middle">
+          <span class="sp-icon">⚡</span>
+          <h4>Middle</h4>
+          <p>What happened? What was the problem?</p>
+          <div class="phrase-examples">
+            <span class="phrase">Suddenly...</span>
+            <span class="phrase">Then...</span>
+            <span class="phrase">After that...</span>
+          </div>
+        </div>
+        <div class="story-arrow">→</div>
+        <div class="story-part ending">
+          <span class="sp-icon">🌈</span>
+          <h4>Ending</h4>
+          <p>How did it finish? How did people feel?</p>
+          <div class="phrase-examples">
+            <span class="phrase">In the end...</span>
+            <span class="phrase">Finally...</span>
+            <span class="phrase">They were very happy!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Story Example -->
+    <div class="example-section">
+      <h3>📚 Example Story: The Monkey Photographer</h3>
+      <div class="story-pictures">
+        <div class="story-pic">
+          <div class="pic-emoji">🐒</div>
+          <p>Picture 1: A monkey finds a camera</p>
+        </div>
+        <div class="pic-arrow">→</div>
+        <div class="story-pic">
+          <div class="pic-emoji">📸</div>
+          <p>Picture 2: The monkey takes photos</p>
+        </div>
+        <div class="pic-arrow">→</div>
+        <div class="story-pic">
+          <div class="pic-emoji">😄</div>
+          <p>Picture 3: Everyone looks at the funny photos</p>
+        </div>
+      </div>
+      <div class="example-story">
+        <h4>Example story:</h4>
+        <p class="story-text">One sunny day, a cheeky monkey found a camera on a bench in the jungle. He picked it up and started taking photos of everything — trees, flowers, and his own face! The photos were very funny. When the zookeeper found the camera, he looked at all the silly pictures and laughed and laughed. The monkey was very proud of himself!</p>
+        <div class="story-word-count">✅ Word count: 62 words — Great job!</div>
+      </div>
+    </div>
+
+    <!-- Writing Tips -->
+    <div class="tips-box">
+      <h3>💡 Writing Tips for Kids</h3>
+      <ul class="tip-list">
+        <li>👀 Look at all 3 pictures carefully before you start</li>
+        <li>📝 Always write more than 20 words</li>
+        <li>🎨 Add adjectives to make your story more interesting (big, red, exciting!)</li>
+        <li>🔗 Use connectors: <strong>first, then, next, after that, finally</strong></li>
+        <li>✅ Check your spelling and punctuation at the end</li>
+        <li>😊 Write a happy or surprising ending!</li>
+      </ul>
+    </div>
+
+    <!-- Writing Exercise -->
+    <div class="exercise-box writing-exercise">
+      <div class="exercise-header">
+        <h3>✏️ Write Your Own Story!</h3>
+      </div>
+      <div class="story-pictures">
+        <div class="story-pic">
+          <div class="pic-emoji">🏖️</div>
+          <p>Picture 1: Children arrive at the beach</p>
+        </div>
+        <div class="pic-arrow">→</div>
+        <div class="story-pic">
+          <div class="pic-emoji">🐠</div>
+          <p>Picture 2: They find something in the water</p>
+        </div>
+        <div class="pic-arrow">→</div>
+        <div class="story-pic">
+          <div class="pic-emoji">🌟</div>
+          <p>Picture 3: Something amazing happens!</p>
+        </div>
+      </div>
+      <div class="writing-area">
+        <div class="word-count-display">
+          Words: <span id="wordCount">0</span>
+          <span id="wordCountStatus" class="wc-status">Keep writing! 📝</span>
+        </div>
+        <textarea id="storyText" placeholder="Start your story here... One day, some children went to the beach..." oninput="countWords()" rows="8"></textarea>
+      </div>
+      <div class="useful-phrases">
+        <h4>🔖 Useful phrases (click to add!)</h4>
+        <div class="phrase-buttons">
+          <button class="phrase-btn" onclick="addPhrase('One sunny day, ')">One sunny day,</button>
+          <button class="phrase-btn" onclick="addPhrase('Suddenly, ')">Suddenly,</button>
+          <button class="phrase-btn" onclick="addPhrase('After that, ')">After that,</button>
+          <button class="phrase-btn" onclick="addPhrase('They were very excited because ')">They were very excited</button>
+          <button class="phrase-btn" onclick="addPhrase('Finally, ')">Finally,</button>
+          <button class="phrase-btn" onclick="addPhrase('In the end, ')">In the end,</button>
+          <button class="phrase-btn" onclick="addPhrase('It was amazing! ')">It was amazing!</button>
+        </div>
+      </div>
+      <div id="story-feedback" class="feedback-area"></div>
+      <button class="btn-check" onclick="checkStory()">Check My Story! ✅</button>
+      <button class="btn-reset" onclick="clearStory()">Clear & Start Again 🔄</button>
+    </div>
+
+    <!-- Extra Study Links - RW Part 7 -->
+    <div class="extra-links-box">
+      <div class="extra-links-header">
+        <span class="extra-links-icon">🌐</span>
+        <h3>Want more story practice? Visit this website!</h3>
+      </div>
+      <p class="extra-links-desc">See a great example of a Part 7 story with pictures. It will help you understand what a good story looks like!</p>
+      <div class="links-grid">
+        <a href="https://www.esleschool.com/monkey-taking-photos/" target="_blank" rel="noopener" class="resource-link resource-link-featured">
+          <span class="link-emoji">🐒</span>
+          <span class="link-text">Part 7 – The Monkey Taking Photos</span>
+          <span class="link-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== LISTENING SECTION ==================== -->
+<section id="listening" class="section">
+  <div class="sub-nav">
+    <h2 class="sub-nav-title">🎧 Listening</h2>
+    <div class="tab-buttons">
+      <button class="tab-btn active" onclick="showTab('li', 'part3')">Part 3</button>
+      <button class="tab-btn" onclick="showTab('li', 'part4')">Part 4</button>
+    </div>
+  </div>
+
+  <!-- Listening Part 3 -->
+  <div id="li-part3" class="tab-content active">
+    <div class="part-intro">
+      <div class="part-badge listening-badge">Listening • Part 3</div>
+      <h2>Listening Part 3: Match the Information! 🔗</h2>
+    </div>
+
+    <div class="explanation-box">
+      <h3>📌 What do you do in Part 3?</h3>
+      <div class="steps">
+        <div class="step"><span class="step-num">1</span><p>You see a list of people or things (e.g. names of children)</p></div>
+        <div class="step"><span class="step-num">2</span><p>You also see a list of options (e.g. activities or places)</p></div>
+        <div class="step"><span class="step-num">3</span><p>You listen and match each person to the right option</p></div>
+        <div class="step"><span class="step-num">4</span><p>There are always MORE options than you need (some are not used!)</p></div>
+      </div>
+    </div>
+
+    <div class="tips-box">
+      <h3>💡 Tips for Listening Part 3</h3>
+      <ul class="tip-list">
+        <li>👀 Read all the names and options BEFORE the audio starts</li>
+        <li>✏️ Write letters lightly (in case you change your mind)</li>
+        <li>🎯 Listen for the NAME first, then the information</li>
+        <li>🔄 Remember: you hear everything TWICE. Don't worry if you miss something!</li>
+        <li>❌ Some options are not used — that's normal!</li>
+      </ul>
+    </div>
+
+    <!-- Audio Player Simulation -->
+    <div class="audio-section">
+      <h3>🎵 Break Time Activities</h3>
+      <p class="audio-desc">Five children are talking about what they like to do at break time. Listen and match each child to their favourite activity.</p>
+      
+      <div class="audio-player">
+        <div class="audio-visual">
+          <div class="sound-waves" id="soundWaves">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <span class="audio-icon">🎧</span>
+        </div>
+        <div class="audio-controls">
+          <button class="audio-btn play-btn" id="li3-playBtn" onclick="playAudio('li3')">
+            ▶ Play Audio
+          </button>
+          <div class="audio-progress-bar">
+            <div class="audio-progress-fill" id="li3-progress"></div>
+          </div>
+          <span class="audio-time" id="li3-time">0:00 / 0:45</span>
+        </div>
+      </div>
+
+      <!-- Transcript (hidden) -->
+      <div class="transcript-toggle">
+        <button class="btn-transcript" onclick="toggleTranscript('li3-transcript')">📄 Show Script (for practice)</button>
+        <div id="li3-transcript" class="transcript hidden">
+          <h4>Audio Script:</h4>
+          <p><strong>Boy:</strong> "Hello, my name is Tom. At break time, I always play football with my friends. I love it!"</p>
+          <p><strong>Girl 1:</strong> "Hi, I'm Sarah. I like to read books in the library during break. It's quiet and I love stories."</p>
+          <p><strong>Boy 2:</strong> "I'm Jack. My favourite thing at break is drawing pictures. I want to be an artist one day!"</p>
+          <p><strong>Girl 2:</strong> "My name is Emma. I love dancing with my friends at break time. We make up our own dances!"</p>
+          <p><strong>Boy 3:</strong> "Hi, I'm Ben. I like to eat my snack and chat with friends. That's my favourite part of break!"</p>
+        </div>
+      </div>
+
+      <!-- Matching Exercise -->
+      <div class="matching-exercise">
+        <h4>🎯 Now match the children to their activities!</h4>
+        <div class="matching-container">
+          <div class="names-column">
+            <h5>Children</h5>
+            <div class="name-item">1. Tom</div>
+            <div class="name-item">2. Sarah</div>
+            <div class="name-item">3. Jack</div>
+            <div class="name-item">4. Emma</div>
+            <div class="name-item">5. Ben</div>
+          </div>
+          <div class="answers-column">
+            <h5>Your Answers</h5>
+            <div class="answer-row">
+              <select class="match-select" id="li3-q1">
+                <option value="">Choose...</option>
+                <option value="A">A) reading books</option>
+                <option value="B">B) playing football</option>
+                <option value="C">C) drawing pictures</option>
+                <option value="D">D) dancing</option>
+                <option value="E">E) talking with friends</option>
+                <option value="F">F) playing chess</option>
+              </select>
+            </div>
+            <div class="answer-row">
+              <select class="match-select" id="li3-q2">
+                <option value="">Choose...</option>
+                <option value="A">A) reading books</option>
+                <option value="B">B) playing football</option>
+                <option value="C">C) drawing pictures</option>
+                <option value="D">D) dancing</option>
+                <option value="E">E) talking with friends</option>
+                <option value="F">F) playing chess</option>
+              </select>
+            </div>
+            <div class="answer-row">
+              <select class="match-select" id="li3-q3">
+                <option value="">Choose...</option>
+                <option value="A">A) reading books</option>
+                <option value="B">B) playing football</option>
+                <option value="C">C) drawing pictures</option>
+                <option value="D">D) dancing</option>
+                <option value="E">E) talking with friends</option>
+                <option value="F">F) playing chess</option>
+              </select>
+            </div>
+            <div class="answer-row">
+              <select class="match-select" id="li3-q4">
+                <option value="">Choose...</option>
+                <option value="A">A) reading books</option>
+                <option value="B">B) playing football</option>
+                <option value="C">C) drawing pictures</option>
+                <option value="D">D) dancing</option>
+                <option value="E">E) talking with friends</option>
+                <option value="F">F) playing chess</option>
+              </select>
+            </div>
+            <div class="answer-row">
+              <select class="match-select" id="li3-q5">
+                <option value="">Choose...</option>
+                <option value="A">A) reading books</option>
+                <option value="B">B) playing football</option>
+                <option value="C">C) drawing pictures</option>
+                <option value="D">D) dancing</option>
+                <option value="E">E) talking with friends</option>
+                <option value="F">F) playing chess</option>
+              </select>
+            </div>
+          </div>
+          <div class="options-reminder">
+            <h5>Options (one is extra!)</h5>
+            <div class="option-pill">A) reading books</div>
+            <div class="option-pill">B) playing football</div>
+            <div class="option-pill">C) drawing pictures</div>
+            <div class="option-pill">D) dancing</div>
+            <div class="option-pill">E) talking with friends</div>
+            <div class="option-pill extra">F) playing chess ← extra!</div>
+          </div>
+        </div>
+        <div id="li3-feedback" class="feedback-area"></div>
+        <button class="btn-check" onclick="submitLI3()">Check Answers! ✅</button>
+        <button class="btn-reset" onclick="resetLI3()">Try Again 🔄</button>
+      </div>
+    </div>
+
+    <!-- Exercise 2: Different Hobbies -->
+    <div class="audio-section">
+      <h3>🎵 Different Hobbies</h3>
+      <p class="audio-desc">Listen to five children talking about their hobbies. Match each child to their hobby.</p>
+      
+      <div class="audio-player">
+        <div class="audio-visual">
+          <div class="sound-waves" id="soundWaves2">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <span class="audio-icon">🎧</span>
+        </div>
+        <div class="audio-controls">
+          <button class="audio-btn play-btn" id="li3b-playBtn" onclick="playAudio('li3b')">
+            ▶ Play Audio
+          </button>
+          <div class="audio-progress-bar">
+            <div class="audio-progress-fill" id="li3b-progress"></div>
+          </div>
+          <span class="audio-time" id="li3b-time">0:00 / 0:50</span>
+        </div>
+      </div>
+
+      <div class="transcript-toggle">
+        <button class="btn-transcript" onclick="toggleTranscript('li3b-transcript')">📄 Show Script</button>
+        <div id="li3b-transcript" class="transcript hidden">
+          <h4>Audio Script:</h4>
+          <p><strong>Anna:</strong> "I love going to the swimming pool every weekend. I can swim really fast!"</p>
+          <p><strong>Carlos:</strong> "My hobby is playing the guitar. I practise every day after school."</p>
+          <p><strong>Lily:</strong> "I enjoy painting. I have lots of paints and brushes at home."</p>
+          <p><strong>Max:</strong> "I collect stamps from different countries. I have over 500 stamps!"</p>
+          <p><strong>Zoe:</strong> "I love cooking with my mum. We make cakes and biscuits together."</p>
+        </div>
+      </div>
+
+      <div class="matching-exercise">
+        <h4>🎯 Match children to their hobbies!</h4>
+        <div class="matching-container">
+          <div class="names-column">
+            <h5>Children</h5>
+            <div class="name-item">1. Anna</div>
+            <div class="name-item">2. Carlos</div>
+            <div class="name-item">3. Lily</div>
+            <div class="name-item">4. Max</div>
+            <div class="name-item">5. Zoe</div>
+          </div>
+          <div class="answers-column">
+            <h5>Your Answers</h5>
+            <div class="answer-row">
+              <select class="match-select" id="li3b-q1">
+                <option value="">Choose...</option>
+                <option value="A">A) swimming</option>
+                <option value="B">B) playing guitar</option>
+                <option value="C">C) painting</option>
+                <option value="D">D) collecting stamps</option>
+                <option value="E">E) cooking</option>
+                <option value="F">F) cycling</option>
+              </select>
+            </div>
+            <div class="answer-row">
+              <select class="match-select" id="li3b-q2">
+                <option value="">Choose...</option>
+                <option value="A">A) swimming</option>
+                <option value="B">B) playing guitar</option>
+                <option value="C">C) painting</option>
+                <option value="D">D) collecting stamps</option>
+                <option value="E">E) cooking</option>
+                <option value="F">F) cycling</option>
+              </select>
+            </div>
+            <div class="answer-row">
+              <select class="match-select" id="li3b-q3">
+                <option value="">Choose...</option>
+                <option value="A">A) swimming</option>
+                <option value="B">B) playing guitar</option>
+                <option value="C">C) painting</option>
+                <option value="D">D) collecting stamps</option>
+                <option value="E">E) cooking</option>
+                <option value="F">F) cycling</option>
+              </select>
+            </div>
+            <div class="answer-row">
+              <select class="match-select" id="li3b-q4">
+                <option value="">Choose...</option>
+                <option value="A">A) swimming</option>
+                <option value="B">B) playing guitar</option>
+                <option value="C">C) painting</option>
+                <option value="D">D) collecting stamps</option>
+                <option value="E">E) cooking</option>
+                <option value="F">F) cycling</option>
+              </select>
+            </div>
+            <div class="answer-row">
+              <select class="match-select" id="li3b-q5">
+                <option value="">Choose...</option>
+                <option value="A">A) swimming</option>
+                <option value="B">B) playing guitar</option>
+                <option value="C">C) painting</option>
+                <option value="D">D) collecting stamps</option>
+                <option value="E">E) cooking</option>
+                <option value="F">F) cycling</option>
+              </select>
+            </div>
+          </div>
+          <div class="options-reminder">
+            <h5>Options</h5>
+            <div class="option-pill">A) swimming</div>
+            <div class="option-pill">B) playing guitar</div>
+            <div class="option-pill">C) painting</div>
+            <div class="option-pill">D) collecting stamps</div>
+            <div class="option-pill">E) cooking</div>
+            <div class="option-pill extra">F) cycling ← extra!</div>
+          </div>
+        </div>
+        <div id="li3b-feedback" class="feedback-area"></div>
+        <button class="btn-check" onclick="submitLI3b()">Check Answers! ✅</button>
+        <button class="btn-reset" onclick="resetLI3b()">Try Again 🔄</button>
+      </div>
+    </div>
+
+    <!-- Extra Study Links - Listening Part 3 -->
+    <div class="extra-links-box">
+      <div class="extra-links-header">
+        <span class="extra-links-icon">🌐</span>
+        <h3>Want more Listening Part 3 practice?</h3>
+      </div>
+      <p class="extra-links-desc">Visit these pages for more matching exercises. Remember to listen carefully and read the options first! 🎧</p>
+      <div class="links-grid">
+        <a href="https://www.esleschool.com/break-time-activities/" target="_blank" rel="noopener" class="resource-link">
+          <span class="link-emoji">⏰</span>
+          <span class="link-text">Listening Part 3 – Break Time Activities</span>
+          <span class="link-arrow">→</span>
+        </a>
+        <a href="https://www.esleschool.com/a2-different-hobbies/" target="_blank" rel="noopener" class="resource-link">
+          <span class="link-emoji">🎨</span>
+          <span class="link-text">Listening Part 3 – Different Hobbies</span>
+          <span class="link-arrow">→</span>
+        </a>
+        <a href="https://www.esleschool.com/family-weekends/" target="_blank" rel="noopener" class="resource-link">
+          <span class="link-emoji">👨‍👩‍👧</span>
+          <span class="link-text">Listening Part 3 – Family Weekends</span>
+          <span class="link-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Listening Part 4 -->
+  <div id="li-part4" class="tab-content">
+    <div class="part-intro">
+      <div class="part-badge listening-badge">Listening • Part 4</div>
+      <h2>Listening Part 4: Answer the Questions! ✔️</h2>
+    </div>
+
+    <div class="explanation-box">
+      <h3>📌 What do you do in Part 4?</h3>
+      <div class="steps">
+        <div class="step"><span class="step-num">1</span><p>You hear a conversation between two people</p></div>
+        <div class="step"><span class="step-num">2</span><p>You read 5 multiple choice questions</p></div>
+        <div class="step"><span class="step-num">3</span><p>Each question has 3 options (A, B, or C)</p></div>
+        <div class="step"><span class="step-num">4</span><p>Choose the best answer for each question</p></div>
+      </div>
+    </div>
+
+    <div class="tips-box">
+      <h3>💡 Tips for Listening Part 4</h3>
+      <ul class="tip-list">
+        <li>📖 Read the questions BEFORE you listen — it helps you know what to listen for!</li>
+        <li>🎯 Listen for KEY WORDS in the questions (numbers, names, places)</li>
+        <li>❗ The answer is not always the first thing you hear — listen until the end!</li>
+        <li>🚫 Watch out for "distractors" — wrong answers that sound similar!</li>
+      </ul>
+    </div>
+
+    <!-- Emma's Birthday Party -->
+    <div class="audio-section">
+      <h3>🎂 Emma's Birthday Party</h3>
+      <p class="audio-desc">Listen to Emma talking to her friend about her birthday party. Answer the questions below.</p>
+
+      <div class="audio-player">
+        <div class="audio-visual">
+          <div class="sound-waves" id="soundWaves3">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <span class="audio-icon">🎧</span>
+        </div>
+        <div class="audio-controls">
+          <button class="audio-btn play-btn" id="li4a-playBtn" onclick="playAudio('li4a')">
+            ▶ Play Audio
+          </button>
+          <div class="audio-progress-bar">
+            <div class="audio-progress-fill" id="li4a-progress"></div>
+          </div>
+          <span class="audio-time" id="li4a-time">0:00 / 0:55</span>
+        </div>
+      </div>
+
+      <div class="transcript-toggle">
+        <button class="btn-transcript" onclick="toggleTranscript('li4a-transcript')">📄 Show Script</button>
+        <div id="li4a-transcript" class="transcript hidden">
+          <h4>Audio Script:</h4>
+          <p><strong>Friend:</strong> "Hi Emma! When is your birthday party?"</p>
+          <p><strong>Emma:</strong> "It's on Saturday, the 15th of March."</p>
+          <p><strong>Friend:</strong> "How many friends are you inviting?"</p>
+          <p><strong>Emma:</strong> "I'm inviting ten friends. It's going to be great!"</p>
+          <p><strong>Friend:</strong> "Where is the party?"</p>
+          <p><strong>Emma:</strong> "At my house. We have a big garden!"</p>
+          <p><strong>Friend:</strong> "What kind of cake are you having?"</p>
+          <p><strong>Emma:</strong> "A chocolate cake! It's my favourite."</p>
+          <p><strong>Friend:</strong> "What games will you play?"</p>
+          <p><strong>Emma:</strong> "We're going to play musical chairs and dance!"</p>
+        </div>
+      </div>
+
+      <div class="mcq-exercise">
+        <h4>🎯 Answer the questions!</h4>
+        
+        <div class="mcq-question" id="li4a-q1-container">
+          <p class="question-text">1. When is Emma's birthday party?</p>
+          <div class="mcq-options">
+            <label class="mcq-opt"><input type="radio" name="li4a-q1" value="A"> A) Friday, 14th March</label>
+            <label class="mcq-opt"><input type="radio" name="li4a-q1" value="B"> B) Saturday, 15th March</label>
+            <label class="mcq-opt"><input type="radio" name="li4a-q1" value="C"> C) Sunday, 16th March</label>
+          </div>
+        </div>
+
+        <div class="mcq-question" id="li4a-q2-container">
+          <p class="question-text">2. How many friends is Emma inviting?</p>
+          <div class="mcq-options">
+            <label class="mcq-opt"><input type="radio" name="li4a-q2" value="A"> A) eight</label>
+            <label class="mcq-opt"><input type="radio" name="li4a-q2" value="B"> B) twelve</label>
+            <label class="mcq-opt"><input type="radio" name="li4a-q2" value="C"> C) ten</label>
+          </div>
+        </div>
+
+        <div class="mcq-question" id="li4a-q3-container">
+          <p class="question-text">3. Where is the party?</p>
+          <div class="mcq-options">
+            <label class="mcq-opt"><input type="radio" name="li4a-q3" value="A"> A) at a restaurant</label>
+            <label class="mcq-opt"><input type="radio" name="li4a-q3" value="B"> B) at Emma's house</label>
+            <label class="mcq-opt"><input type="radio" name="li4a-q3" value="C"> C) at school</label>
+          </div>
+        </div>
+
+        <div class="mcq-question" id="li4a-q4-container">
+          <p class="question-text">4. What kind of cake will there be?</p>
+          <div class="mcq-options">
+            <label class="mcq-opt"><input type="radio" name="li4a-q4" value="A"> A) strawberry cake</label>
+            <label class="mcq-opt"><input type="radio" name="li4a-q4" value="B"> B) vanilla cake</label>
+            <label class="mcq-opt"><input type="radio" name="li4a-q4" value="C"> C) chocolate cake</label>
+          </div>
+        </div>
+
+        <div class="mcq-question" id="li4a-q5-container">
+          <p class="question-text">5. What game will they play?</p>
+          <div class="mcq-options">
+            <label class="mcq-opt"><input type="radio" name="li4a-q5" value="A"> A) hide and seek</label>
+            <label class="mcq-opt"><input type="radio" name="li4a-q5" value="B"> B) musical chairs</label>
+            <label class="mcq-opt"><input type="radio" name="li4a-q5" value="C"> C) football</label>
+          </div>
+        </div>
+
+        <div id="li4a-feedback" class="feedback-area"></div>
+        <button class="btn-check" onclick="submitLI4a()">Check Answers! ✅</button>
+        <button class="btn-reset" onclick="resetLI4a()">Try Again 🔄</button>
+      </div>
+    </div>
+
+    <!-- School Trip -->
+    <div class="audio-section">
+      <h3>🚌 School Trip Planning</h3>
+      <p class="audio-desc">Listen to a teacher talking about the school trip. Answer the questions below.</p>
+
+      <div class="audio-player">
+        <div class="audio-visual">
+          <div class="sound-waves" id="soundWaves4">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <span class="audio-icon">🎧</span>
+        </div>
+        <div class="audio-controls">
+          <button class="audio-btn play-btn" id="li4b-playBtn" onclick="playAudio('li4b')">
+            ▶ Play Audio
+          </button>
+          <div class="audio-progress-bar">
+            <div class="audio-progress-fill" id="li4b-progress"></div>
+          </div>
+          <span class="audio-time" id="li4b-time">0:00 / 1:00</span>
+        </div>
+      </div>
+
+      <div class="transcript-toggle">
+        <button class="btn-transcript" onclick="toggleTranscript('li4b-transcript')">📄 Show Script</button>
+        <div id="li4b-transcript" class="transcript hidden">
+          <h4>Audio Script:</h4>
+          <p><strong>Teacher:</strong> "Good morning, class! I want to tell you about our school trip next month. We're going to the Natural History Museum. We'll travel by coach, not by train. The trip is on Thursday, the 22nd. You need to bring a packed lunch and wear comfortable shoes. We'll be there for four hours. Any questions?"</p>
+          <p><strong>Student:</strong> "Can we bring our phones?"</p>
+          <p><strong>Teacher:</strong> "Yes, but only for photos! We'll leave school at 8:30 in the morning."</p>
+        </div>
+      </div>
+
+      <div class="mcq-exercise">
+        <h4>🎯 Answer the questions!</h4>
+        
+        <div class="mcq-question">
+          <p class="question-text">1. Where are they going on the school trip?</p>
+          <div class="mcq-options">
+            <label class="mcq-opt"><input type="radio" name="li4b-q1" value="A"> A) Science Museum</label>
+            <label class="mcq-opt"><input type="radio" name="li4b-q1" value="B"> B) Natural History Museum</label>
+            <label class="mcq-opt"><input type="radio" name="li4b-q1" value="C"> C) Art Museum</label>
+          </div>
+        </div>
+
+        <div class="mcq-question">
+          <p class="question-text">2. How will they travel?</p>
+          <div class="mcq-options">
+            <label class="mcq-opt"><input type="radio" name="li4b-q2" value="A"> A) by train</label>
+            <label class="mcq-opt"><input type="radio" name="li4b-q2" value="B"> B) by bus</label>
+            <label class="mcq-opt"><input type="radio" name="li4b-q2" value="C"> C) by coach</label>
+          </div>
+        </div>
+
+        <div class="mcq-question">
+          <p class="question-text">3. When is the trip?</p>
+          <div class="mcq-options">
+            <label class="mcq-opt"><input type="radio" name="li4b-q3" value="A"> A) Tuesday 22nd</label>
+            <label class="mcq-opt"><input type="radio" name="li4b-q3" value="B"> B) Thursday 22nd</label>
+            <label class="mcq-opt"><input type="radio" name="li4b-q3" value="C"> C) Wednesday 22nd</label>
+          </div>
+        </div>
+
+        <div class="mcq-question">
+          <p class="question-text">4. How long will they be at the museum?</p>
+          <div class="mcq-options">
+            <label class="mcq-opt"><input type="radio" name="li4b-q4" value="A"> A) three hours</label>
+            <label class="mcq-opt"><input type="radio" name="li4b-q4" value="B"> B) five hours</label>
+            <label class="mcq-opt"><input type="radio" name="li4b-q4" value="C"> C) four hours</label>
+          </div>
+        </div>
+
+        <div class="mcq-question">
+          <p class="question-text">5. What time do they leave school?</p>
+          <div class="mcq-options">
+            <label class="mcq-opt"><input type="radio" name="li4b-q5" value="A"> A) 8:00</label>
+            <label class="mcq-opt"><input type="radio" name="li4b-q5" value="B"> B) 8:30</label>
+            <label class="mcq-opt"><input type="radio" name="li4b-q5" value="C"> C) 9:00</label>
+          </div>
+        </div>
+
+        <div id="li4b-feedback" class="feedback-area"></div>
+        <button class="btn-check" onclick="submitLI4b()">Check Answers! ✅</button>
+        <button class="btn-reset" onclick="resetLI4b()">Try Again 🔄</button>
+      </div>
+    </div>
+
+    <!-- Extra Study Links - Listening Part 4 -->
+    <div class="extra-links-box">
+      <div class="extra-links-header">
+        <span class="extra-links-icon">🌐</span>
+        <h3>Want more Listening Part 4 practice?</h3>
+      </div>
+      <p class="extra-links-desc">Practice makes perfect! Click these links for more listening exercises with conversations and questions. 🎉</p>
+      <div class="links-grid">
+        <a href="https://www.esleschool.com/emmas-birthday-oarty/" target="_blank" rel="noopener" class="resource-link">
+          <span class="link-emoji">🎂</span>
+          <span class="link-text">Listening Part 4 – Emma's Birthday Party</span>
+          <span class="link-arrow">→</span>
+        </a>
+        <a href="https://www.esleschool.com/school-trip-planning/" target="_blank" rel="noopener" class="resource-link">
+          <span class="link-emoji">🚌</span>
+          <span class="link-text">Listening Part 4 – School Trip Planning</span>
+          <span class="link-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PROGRESS SECTION ==================== -->
+<section id="progress" class="section">
+  <div class="progress-hero">
+    <h2>⭐ My Stars & Progress</h2>
+    <p>Look how far you've come! Keep going, superstar! 🚀</p>
+  </div>
+
+  <div class="stars-display">
+    <div class="big-star-count">
+      <span class="big-star-icon">⭐</span>
+      <span class="big-star-num" id="bigStarCount">0</span>
+      <span class="big-star-label">Total Stars</span>
+    </div>
+  </div>
+
+  <div class="progress-cards">
+    <div class="prog-card">
+      <div class="prog-icon">📖</div>
+      <h3>Reading Part 3</h3>
+      <div class="prog-bar-wrap">
+        <div class="prog-bar" id="prog-rw3"></div>
+      </div>
+      <span class="prog-label" id="prog-rw3-label">Not started</span>
+    </div>
+    <div class="prog-card">
+      <div class="prog-icon">✍️</div>
+      <h3>Reading Part 4</h3>
+      <div class="prog-bar-wrap">
+        <div class="prog-bar" id="prog-rw4"></div>
+      </div>
+      <span class="prog-label" id="prog-rw4-label">Not started</span>
+    </div>
+    <div class="prog-card">
+      <div class="prog-icon">🖊️</div>
+      <h3>Reading Part 7</h3>
+      <div class="prog-bar-wrap">
+        <div class="prog-bar" id="prog-rw7"></div>
+      </div>
+      <span class="prog-label" id="prog-rw7-label">Not started</span>
+    </div>
+    <div class="prog-card">
+      <div class="prog-icon">🎧</div>
+      <h3>Listening Part 3</h3>
+      <div class="prog-bar-wrap">
+        <div class="prog-bar" id="prog-li3"></div>
+      </div>
+      <span class="prog-label" id="prog-li3-label">Not started</span>
+    </div>
+    <div class="prog-card">
+      <div class="prog-icon">🔊</div>
+      <h3>Listening Part 4</h3>
+      <div class="prog-bar-wrap">
+        <div class="prog-bar" id="prog-li4"></div>
+      </div>
+      <span class="prog-label" id="prog-li4-label">Not started</span>
+    </div>
+  </div>
+
+  <div class="achievements">
+    <h3>🏆 Achievements</h3>
+    <div class="badge-grid" id="badgeGrid">
+      <div class="badge-item locked" id="badge-first">
+        <span class="badge-icon">🌟</span>
+        <span class="badge-name">First Star!</span>
+      </div>
+      <div class="badge-item locked" id="badge-reader">
+        <span class="badge-icon">📖</span>
+        <span class="badge-name">Super Reader</span>
+      </div>
+      <div class="badge-item locked" id="badge-listener">
+        <span class="badge-icon">🎧</span>
+        <span class="badge-name">Great Listener</span>
+      </div>
+      <div class="badge-item locked" id="badge-writer">
+        <span class="badge-icon">✏️</span>
+        <span class="badge-name">Story Writer</span>
+      </div>
+      <div class="badge-item locked" id="badge-perfect">
+        <span class="badge-icon">💯</span>
+        <span class="badge-name">Perfect Score!</span>
+      </div>
+      <div class="badge-item locked" id="badge-champ">
+        <span class="badge-icon">🏆</span>
+        <span class="badge-name">Flyers Champion</span>
+      </div>
+    </div>
+  </div>
+
+  <button class="btn-primary" onclick="resetAll()">🔄 Reset All Progress</button>
+</section>
+
+<!-- Celebration Overlay -->
+<div class="celebration" id="celebration" style="display:none">
+  <div class="celebration-box">
+    <div class="celebrate-emoji" id="celebrateEmoji">🎉</div>
+    <h2 id="celebrateTitle">Amazing!</h2>
+    <p id="celebrateMsg">You got a perfect score!</p>
+    <div class="stars-earned" id="starsEarned"></div>
+    <button class="btn-primary" onclick="closeCelebration()">Continue! 🚀</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
